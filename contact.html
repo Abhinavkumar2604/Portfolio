@@ -1,0 +1,248 @@
+<html>
+
+<head>
+    <title>Abhinav Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="x-icon" href="fav.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .entry {
+            height: fit-content;
+            text-align: center;
+            font-style: italic;
+            height: auto;
+        }
+
+        .line {
+            width: 95%;
+
+        }
+
+        .header {
+            overflow: hidden;
+            padding: 20px 10px;
+
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .header-right {
+            float: right;
+        }
+
+        .title {
+            text-align: center;
+            margin: 80px;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+
+
+        }
+
+        .title {
+            word-spacing: 5px;
+            font-family: initial;
+            letter-spacing: 3px;
+            font-size: 40px;
+            border: 3px solid rgba(113, 98, 98, 0.019);
+            padding: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-shadow: 3px 5px 8px black;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #383a3a;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+
+        }
+
+        .get {
+            text-align: center;
+            font-size: 30px;
+            word-spacing: 15px;
+            font-style: initial;
+            word-spacing: 8px;
+            letter-spacing: 2px;
+        }
+
+        .touch {
+            height: 300px;
+        }
+
+        .how {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .button {
+            position: relative;
+            background-color: #4CAF50;
+            border: none;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .button:after {
+            content: "";
+            background: #f1f1f1;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+        }
+
+        .button:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+        }
+
+        .logo {
+            cursor: pointer;
+            float: left;
+
+            padding: 4px;
+            border: 10px double black;
+            border-radius: 5px;
+            width: 60px
+        }
+
+        .logo:hover {
+            background-color: rgb(122, 116, 116);
+        }
+    </style>
+</head>
+
+<body style="margin: 0%;             background-image: linear-gradient(rgb(122, 116, 116),lightgrey );
+">
+    <div class="entry">
+        <div class="header">
+
+            <a href="Blog.html" style="padding-right: 0px;
+          padding-left: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px; "> <img src="letter-a.png" alt="logo" class="logo"></img></a>
+
+            <div class="header-right" style="margin: 20px; ">
+                <a href="Blog.html">Home</a>
+                <a href="Blog.html#aboutme">About</a>
+                <a class="active" href="contact.html">Contact</a>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="title">
+            <h1 class="title">Love to hear from U</h1>
+
+            <form action="contact.html">
+
+                <label for="fname" style="font-size: 25px;">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname" style="font-size: 25px;">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country" style="font-size: 25px;">Country</label>
+                <select id="country" name="country">
+                    <option value="Choose"> Choose</option>
+                    <option value="India">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject" style="font-size: 25px;">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit" onclick="myFunction()">
+
+                <script>
+                    function myFunction() {
+                        alert("Notified!");
+                    }
+                </script>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="touch">
+        <p class="get" style="padding-top: 80px;"><strong> GET IN TOUCH </strong></p>
+        <div class="how">
+            <p>Please feel free to contact me</p>
+
+            <div class="division">
+                <div class="contact">
+                    <p>Mobile Number : +91 8428664130</p>
+                    <a href="mailto:bommireddyabhinavkumar@gmail.com" target="_blank" class="fa fa-google" style=" padding: 15px;
+                       font-size: 45px;
+    width: 40px;"></a>
+                    <a href="https://www.instagram.com/abhinav._.04/" target="_blank" class="fa fa-instagram" style="     padding-top: 15px;
+                    padding-bottom: 2px;    font-size: 45px;
+    width: 40px;;"></a>
+                    <a href="https://www.facebook.com/abhinavkumar.bommireddy" target="_blank" class="fa fa-facebook"
+                        style=" padding: 15px;
+                        font-size: 45px;
+    width: 40px;"></a>
+                </div>
+            </div>
+</body>
+
+</html>
